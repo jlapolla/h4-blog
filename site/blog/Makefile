@@ -1,3 +1,10 @@
+# Check for posts/ build module
+ifeq ($(wildcard $(d)posts/Makefile),) # If posts/ build module is not installed
+  # Download posts/ build module
+  include exec.mk
+  $(call exec,git clone https://github.com/jlapolla/h4-blog-content.git $(d)posts,Failed to download "$(d)posts/" module)
+endif # End check for posts/ build module
+
 ##
 # Populate the article page template with contents
 #
