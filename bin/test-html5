@@ -1,3 +1,0 @@
-#!/bin/sh
-
-java -cp downloads/vnu/vnu.jar -Dnu.validator.client.host=127.0.0.1 -Dnu.validator.client.port=8888 -Dnu.validator.client.content-type=text/html -Dnu.validator.client.parser=html5 -Dnu.validator.client.out=gnu -Dnu.validator.client.showsource=yes nu.validator.client.HttpClient "$@"

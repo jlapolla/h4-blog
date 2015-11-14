@@ -1,3 +1,0 @@
-#!/bin/sh
-
-exec java -cp downloads/vnu/vnu.jar nu.validator.servlet.Main 8888
